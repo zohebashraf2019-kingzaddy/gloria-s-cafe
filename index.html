@@ -53,7 +53,7 @@
         <a href="#gallery">Gallery</a>
         <a href="#reviews">Reviews</a>
         <a href="#visit">Visit</a>
-        <a href="tel:+17754093277" class="btn btn-gold btn-sm">Call (775) 409-3277</a>
+        <a href="#reserve" class="btn btn-gold btn-sm">Reserve a Table</a>
       </nav>
       <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
@@ -68,8 +68,8 @@
       <h1 class="reveal">Breakfast made from scratch,<br /><em>served like family.</em></h1>
       <p class="lead reveal">Home of Reno's favorite eggs benedict and chilaquiles. Pull up a chair on Dickerson Rd and feel right at home.</p>
       <div class="hero-cta reveal">
-        <a href="#menu" class="btn btn-gold">See the Menu</a>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=2365+Dickerson+Rd,+Reno,+NV+89503" target="_blank" rel="noopener" class="btn btn-ghost">Get Directions</a>
+        <a href="#reserve" class="btn btn-gold">Reserve a Table</a>
+        <a href="#menu" class="btn btn-ghost">See the Menu</a>
       </div>
       <div class="hero-meta reveal">
         <div class="status" id="status"><span class="dot"></span><span id="status-text">Checking hours…</span></div>
@@ -287,6 +287,49 @@
     </div>
   </section>
 
+  <!-- Reserve -->
+  <section class="section reserve" id="reserve">
+    <div class="wrap reserve-grid">
+      <div class="reserve-intro reveal">
+        <p class="eyebrow">Reservations</p>
+        <h2>Save your seat</h2>
+        <p>Send us a request and we'll confirm by phone or text. Walk-ins are always welcome. Reservations just help us get your table ready, especially for weekend brunch and bigger groups.</p>
+        <ul class="reserve-points">
+          <li><strong>Mon, Wed–Fri</strong> · seating 8:00 AM – 12:30 PM</li>
+          <li><strong>Sat &amp; Sun</strong> · seating 8:00 AM – 1:30 PM</li>
+          <li><strong>Tuesday</strong> · closed</li>
+          <li>Parties of 13 or more, please call <a href="tel:+17754093277">(775) 409-3277</a></li>
+        </ul>
+      </div>
+      <form class="reserve-form reveal" id="reserve-form" novalidate>
+        <div class="row">
+          <label>Name<input name="name" type="text" autocomplete="name" required maxlength="80" /></label>
+          <label>Phone<input name="phone" type="tel" autocomplete="tel" required maxlength="20" placeholder="(775) 555-0123" /></label>
+        </div>
+        <label>Email <span class="opt">(for your confirmation)</span><input name="email" type="email" autocomplete="email" maxlength="120" /></label>
+        <div class="row three">
+          <label>Date<input name="date" id="r-date" type="date" required /></label>
+          <label>Time<select name="time" id="r-time" required><option value="">Pick a date first</option></select></label>
+          <label>Guests<select name="guests" required>
+            <option value="">Select</option>
+            <option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option>
+            <option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option>
+          </select></label>
+        </div>
+        <fieldset class="seating">
+          <legend>Seating</legend>
+          <label><input type="radio" name="seating" value="No preference" checked /> No preference</label>
+          <label><input type="radio" name="seating" value="Inside" /> Inside</label>
+          <label><input type="radio" name="seating" value="Patio" /> Patio</label>
+        </fieldset>
+        <label>Notes <span class="opt">(birthday, high chair, accessibility…)</span><textarea name="notes" rows="3" maxlength="500"></textarea></label>
+        <input type="text" name="company" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <button type="submit" class="btn btn-gold submit">Request Reservation</button>
+        <p class="form-msg" id="form-msg" role="status"></p>
+      </form>
+    </div>
+  </section>
+
   <!-- Visit -->
   <section class="section visit" id="visit">
     <div class="wrap visit-grid">
@@ -340,7 +383,7 @@
   <!-- Mobile action bar -->
   <div class="mobile-bar">
     <a href="tel:+17754093277">📞 Call</a>
-    <a href="#menu">🍳 Menu</a>
+    <a href="#reserve">📅 Reserve</a>
     <a href="https://www.google.com/maps/dir/?api=1&destination=2365+Dickerson+Rd,+Reno,+NV+89503" target="_blank" rel="noopener">📍 Directions</a>
   </div>
 
