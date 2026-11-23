@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gloria's Cafe | Breakfast & Brunch in Reno, NV — Benedicts & Chilaquiles</title>
+  <meta name="description" content="Gloria's Cafe is a family-run All American breakfast restaurant at 2365 Dickerson Rd, Reno, NV. Scratch-made eggs benedict, chilaquiles, huevos rancheros, omelettes and horchata lattes. Dine-in, patio and curbside pickup." />
+  <meta property="og:title" content="Gloria's Cafe — Reno's Breakfast Spot" />
+  <meta property="og:description" content="The best eggs benedict and chilaquiles in Reno. 2365 Dickerson Rd · (775) 409-3277" />
+  <meta property="og:image" content="assets/img/chilaquiles.jpg" />
+  <meta name="theme-color" content="#15110d" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Karla:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Gloria's Cafe",
+    "image": "assets/img/storefront.jpg",
+    "servesCuisine": ["American", "Mexican", "Breakfast", "Brunch"],
+    "priceRange": "$",
+    "telephone": "+1-775-409-3277",
+    "email": "Gloriascafe.nv@gmail.com",
+    "address": { "@type": "PostalAddress", "streetAddress": "2365 Dickerson Rd", "addressLocality": "Reno", "addressRegion": "NV", "postalCode": "89503", "addressCountry": "US" },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "13:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "08:00", "closes": "14:00" }
+    ],
+    "sameAs": ["https://www.facebook.com/gloriascafe.nv/", "https://www.instagram.com/gloriascafe.nv/", "https://www.yelp.com/biz/gloria-s-cafe-reno-2"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Announcement -->
+  <div class="announce" id="announce">
+    <span>🦃 <strong>We'll be open Thanksgiving Day!</strong> Come start your holiday with breakfast at Gloria's.</span>
+    <button class="announce-x" aria-label="Dismiss announcement" onclick="this.parentElement.remove()">×</button>
+  </div>
+
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a href="#top" class="brand" aria-label="Gloria's Cafe home">
+        <img src="assets/img/logo.png" alt="Gloria's Cafe logo" />
+      </a>
+      <nav class="links" id="links">
+        <a href="#menu">Menu</a>
+        <a href="#story">Our Story</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#visit">Visit</a>
+        <a href="tel:+17754093277" class="btn btn-gold btn-sm">Call (775) 409-3277</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="hero-bg" style="background-image:url('assets/img/chilaquiles.jpg')"></div>
+    <div class="hero-shade"></div>
+    <div class="wrap hero-content">
+      <p class="eyebrow reveal">All American Breakfast · Reno, Nevada</p>
+      <h1 class="reveal">Breakfast made from scratch,<br /><em>served like family.</em></h1>
+      <p class="lead reveal">Home of Reno's favorite eggs benedict and chilaquiles. Pull up a chair on Dickerson Rd and feel right at home.</p>
+      <div class="hero-cta reveal">
+        <a href="#menu" class="btn btn-gold">See the Menu</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=2365+Dickerson+Rd,+Reno,+NV+89503" target="_blank" rel="noopener" class="btn btn-ghost">Get Directions</a>
+      </div>
+      <div class="hero-meta reveal">
+        <div class="status" id="status"><span class="dot"></span><span id="status-text">Checking hours…</span></div>
+        <div class="stars"><span class="star-row">★★★★★</span> 4.5 on Google · 460+ reviews</div>
+        <div class="stars">94% recommend on Facebook</div>
+      </div>
+    </div>
+    <a href="#favorites" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Eggs Benedict</span><i>✦</i><span>Chilaquiles</span><i>✦</i><span>Huevos Rancheros</span><i>✦</i><span>Steak &amp; Eggs</span><i>✦</i><span>Blueberry Pancakes</span><i>✦</i><span>Horchata Latte</span><i>✦</i>
+      <span>Eggs Benedict</span><i>✦</i><span>Chilaquiles</span><i>✦</i><span>Huevos Rancheros</span><i>✦</i><span>Steak &amp; Eggs</span><i>✦</i><span>Blueberry Pancakes</span><i>✦</i><span>Horchata Latte</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- Favorites -->
+  <section class="section favorites" id="favorites">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow dark">House Favorites</p>
+        <h2>The plates Reno keeps coming back for</h2>
+      </div>
+      <div class="fav-grid">
+        <article class="fav reveal">
+          <div class="fav-img"><img src="assets/img/eggs-benedict.jpg" alt="Eggs benedict with hollandaise and hash browns" loading="lazy" /></div>
+          <div class="fav-body"><h3>Eggs Benedict</h3><p>Poached eggs, silky house hollandaise, toasted English muffin. Try the crab cake, bacon or chorizo versions.</p></div>
+        </article>
+        <article class="fav reveal">
+          <div class="fav-img"><img src="assets/img/chilaquiles.jpg" alt="Chilaquiles topped with avocado, crema and pico de gallo" loading="lazy" /></div>
+          <div class="fav-body"><h3>Chilaquiles</h3><p>Crispy tortillas tossed in red sauce, piled with crema, queso fresco, sliced avocado and fresh pico.</p></div>
+        </article>
+        <article class="fav reveal">
+          <div class="fav-img"><img src="assets/img/specialty-dish.jpg" alt="Gloria's Specialty Dish: eggs scrambled with chorizo, beans and guacamole" loading="lazy" /></div>
+          <div class="fav-body"><h3>Gloria's Specialty Dish <span class="price">$13.99</span></h3><p>Three eggs scrambled with chorizo, queso, onions and tomatoes, with homemade beans and corn tortillas.</p></div>
+        </article>
+        <article class="fav reveal">
+          <div class="fav-img"><img src="assets/img/huevos-rancheros.jpg" alt="Huevos rancheros with ranchero sauce and crema" loading="lazy" /></div>
+          <div class="fav-body"><h3>Huevos Rancheros <span class="price">$13.59</span></h3><p>Our homemade ranchero sauce over a tostada with hash browns, beans, queso, guac, sour cream and pico.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section class="section menu" id="menu">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Our Menu</p>
+        <h2>Classic breakfast, with a little Mexican soul</h2>
+        <p class="sub">Everything's made fresh in our kitchen. Prices can change, so give us a call if you have any questions.</p>
+      </div>
+
+      <div class="tabs reveal" role="tablist">
+        <button class="tab active" data-tab="specials" role="tab">House Specials</button>
+        <button class="tab" data-tab="benedicts" role="tab">Benedicts & Favorites</button>
+        <button class="tab" data-tab="omelettes" role="tab">Omelettes</button>
+        <button class="tab" data-tab="griddle" role="tab">Griddle</button>
+        <button class="tab" data-tab="healthy" role="tab">Healthy Lifestyle</button>
+        <button class="tab" data-tab="salads" role="tab">Salads</button>
+        <button class="tab" data-tab="drinks" role="tab">Coffee & Drinks</button>
+      </div>
+
+      <div class="panels">
+        <div class="panel active" id="specials">
+          <div class="menu-grid">
+            <div class="item"><div class="item-top"><h4>Gloria's Specialty Dish</h4><span class="dots"></span><span class="amt">$13.99</span></div><p>3 eggs scrambled with chorizo, queso, onions and tomatoes. Served with homemade beans, guacamole, sour cream, pico de gallo and 3 corn tortillas.</p><span class="tag">Signature</span></div>
+            <div class="item"><div class="item-top"><h4>Huevos Rancheros</h4><span class="dots"></span><span class="amt">$13.59</span></div><p>Served with our homemade ranchero sauce, tostada, hash browns, beans, queso, guacamole, sour cream and pico de gallo.</p></div>
+            <div class="item"><div class="item-top"><h4>Chilaquiles</h4><span class="dots"></span><span class="amt ask">Ask us</span></div><p>Crispy tortilla chips simmered in red sauce, topped with crema, queso fresco, avocado and pico. Add steak or eggs.</p><span class="tag">Fan favorite</span></div>
+            <div class="item"><div class="item-top"><h4>Steak & Eggs</h4><span class="dots"></span><span class="amt ask">Ask us</span></div><p>Seared steak with scrambled eggs and your choice of hash browns or home-style potatoes.</p></div>
+            <div class="item"><div class="item-top"><h4>Chicken Fried Steak</h4><span class="dots"></span><span class="amt ask">Ask us</span></div><p>A diner classic, crispy and golden, smothered and served with eggs and potatoes.</p></div>
+          </div>
+          <p class="note">Specialty plates don't include mini pancakes.</p>
+        </div>
+
+        <div class="panel" id="benedicts">
+          <div class="menu-grid">
+            <div class="item"><div class="item-top"><h4>Classic Eggs Benedict</h4><span class="dots"></span><span class="amt ask">Ask us</span></div><p>Two poached eggs on an English muffin with house hollandaise, served with hash browns.</p></div>
+            <div class="item"><div class="item-top"><h4>Crab Cake Benedict</h4><span class="dots"></span><span class="amt ask">Ask us</span></div><p>Golden crab cakes topped with poached eggs and hollandaise. One of our most talked-about plates.</p><span class="tag">Must try</span></div>
+            <div class="item"><div class="item-top"><h4>Chorizo Benedict</h4><span class="dots"></span><span class="amt ask">Ask us</span></div><p>Our Mexican twist on the classic, with spicy chorizo under poached eggs and hollandaise.</p></div>
+            <div class="item"><div class="item-top"><h4>Bacon Benedict</h4><span class="dots"></span><span class="amt ask">Ask us</span></div><p>Thick-cut crispy bacon, poached eggs and hollandaise with a side of crispy hash browns.</p></div>
+            <div class="item"><div class="item-top"><h4>Monte Cristo</h4><span class="dots"></span><span class="amt ask">Ask us</span></div><p>The sweet-and-savory sandwich, golden and griddled.</p></div>
+          </div>
+        </div>
+
+        <div class="panel" id="omelettes">
+          <div class="menu-grid">
+            <div class="item"><div class="item-top"><h4>Ham & Cheese Omelette</h4><span class="dots"></span><span class="amt">$12.99</span></div><p>Ham and mixed Jack and cheddar cheese.</p></div>
+            <div class="item"><div class="item-top"><h4>Denver Omelette</h4><span class="dots"></span><span class="amt">$12.99</span></div><p>Bell peppers, onions, ham and mixed Jack and cheddar cheese.</p></div>
+            <div class="item"><div class="item-top"><h4>Chorizo Omelette</h4><span class="dots"></span><span class="amt ask">Ask us</span></div><p>Fluffy omelette with chorizo and peppers, sour cream drizzle, beans and guacamole.</p></div>
+          </div>
+        </div>
+
+        <div class="panel" id="griddle">
+          <div class="menu-grid">
+            <div class="item"><div class="item-top"><h4>Pancakes</h4><span class="dots"></span><span class="amt">$6.25</span></div><p>Short stack, 2 pieces.</p></div>
+            <div class="item"><div class="item-top"><h4>Blueberry Pancakes</h4><span class="dots"></span><span class="amt">$7.25</span></div><p>Short stack, 2 pieces, fluffy and perfectly sweet.</p></div>
+            <div class="item"><div class="item-top"><h4>French Toast</h4><span class="dots"></span><span class="amt ask">Ask us</span></div><p>Thick-sliced and griddled golden.</p></div>
+            <div class="item"><div class="item-top"><h4>Waffles</h4><span class="dots"></span><span class="amt ask">Ask us</span></div><p>Crisp outside, soft inside.</p></div>
+          </div>
+        </div>
+
+        <div class="panel" id="healthy">
+          <div class="menu-grid">
+            <div class="item"><div class="item-top"><h4>Spinach Egg White Omelette</h4><span class="dots"></span><span class="amt">$13.50</span></div><p>Fresh spinach and fresh egg whites, served with fresh fruit or fresh tomatoes.</p></div>
+            <div class="item"><div class="item-top"><h4>Vegetarian Quesadilla</h4><span class="dots"></span><span class="amt">$12.50</span></div><p>Sautéed fresh spinach, mushrooms, bell peppers and onions with mixed Jack and cheddar in a chipotle tortilla. Sour cream, guacamole and pico de gallo.</p><span class="tag">Vegetarian</span></div>
+          </div>
+        </div>
+
+        <div class="panel" id="salads">
+          <div class="menu-grid">
+            <div class="item"><div class="item-top"><h4>Chicken Caesar Salad</h4><span class="dots"></span><span class="amt">$11.99</span></div><p>Sautéed whole chicken breast with fresh romaine, croutons, Parmesan and Caesar dressing.</p></div>
+            <div class="item"><div class="item-top"><h4>Shrimp Louie Salad</h4><span class="dots"></span><span class="amt">$12.99</span></div><p>Mixed lettuce, tomatoes, hard-boiled eggs, avocado, onions, cucumber and grilled shrimp.</p></div>
+          </div>
+        </div>
+
+        <div class="panel" id="drinks">
+          <div class="menu-grid">
+            <div class="item"><div class="item-top"><h4>Horchata Latte</h4><span class="dots"></span><span class="amt ask">Ask us</span></div><p>Creamy cinnamon horchata meets espresso, topped with whipped cream and cinnamon.</p><span class="tag">Signature</span></div>
+            <div class="item"><div class="item-top"><h4>Iced Coffee</h4><span class="dots"></span><span class="amt ask">Ask us</span></div><p>Cold, smooth and made to order.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-cta reveal">
+        <a href="tel:+17754093277" class="btn btn-gold">Call for Curbside Pickup</a>
+        <span>Dine-in · Outdoor patio · Curbside pickup</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story -->
+  <section class="section story" id="story">
+    <div class="wrap story-grid">
+      <div class="story-img reveal">
+        <img src="assets/img/storefront.jpg" alt="Gloria's Cafe sign at 2365 Dickerson Rd" loading="lazy" />
+        <div class="story-badge"><strong>Family</strong><span>owned &amp; operated</span></div>
+      </div>
+      <div class="story-text reveal">
+        <p class="eyebrow dark">Our Story</p>
+        <h2>A little cafe with a big, warm kitchen</h2>
+        <p>Gloria's Cafe is a cozy, family-run breakfast spot tucked off Dickerson Rd, near the Truckee River. We cook American diner classics side by side with the Mexican comfort food we grew up on, so eggs benedict and chilaquiles both belong on the same table.</p>
+        <p>Everything starts from scratch: our ranchero sauce, our homemade beans, our hollandaise. Come as you are, grab a seat inside or out on the patio, and let us take care of the rest.</p>
+        <ul class="perks">
+          <li>🍳 Scratch-made sauces &amp; beans</li>
+          <li>☀️ Shaded outdoor patio</li>
+          <li>🚗 Easy parking &amp; curbside pickup</li>
+          <li>♿ Wheelchair-accessible entrance</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reels -->
+  <section class="section reels">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Life at Gloria's</p>
+        <h2>Straight from our kitchen</h2>
+        <p class="sub">Follow along for daily specials, holiday hours and behind-the-scenes fun.</p>
+      </div>
+      <div class="reel-grid">
+        <figure class="reel reveal"><video src="assets/video/reel3.mp4" poster="assets/video/reel3.jpg" muted loop playsinline preload="none"></video><figcaption>Chilaquiles, done right</figcaption></figure>
+        <figure class="reel reveal"><video src="assets/video/reel1.mp4" poster="assets/video/reel1.jpg" muted loop playsinline preload="none"></video><figcaption>Meet the crew</figcaption></figure>
+        <figure class="reel reveal"><video src="assets/video/reel2.mp4" poster="assets/video/reel2.jpg" muted loop playsinline preload="none"></video><figcaption>Open on Thanksgiving 🦃</figcaption></figure>
+      </div>
+      <div class="social-row reveal">
+        <a href="https://www.instagram.com/gloriascafe.nv/" target="_blank" rel="noopener" class="btn btn-ghost">Instagram @gloriascafe.nv</a>
+        <a href="https://www.facebook.com/gloriascafe.nv/" target="_blank" rel="noopener" class="btn btn-ghost">Facebook</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section gallery" id="gallery">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow dark">Gallery</p>
+        <h2>Come hungry</h2>
+      </div>
+      <div class="masonry">
+        <button class="g reveal" data-src="assets/img/bacon-benedict.jpg"><img src="assets/img/bacon-benedict.jpg" alt="Bacon eggs benedict with hash browns" loading="lazy" /></button>
+        <button class="g reveal" data-src="assets/img/steak-chilaquiles.jpg"><img src="assets/img/steak-chilaquiles.jpg" alt="Chilaquiles with steak and avocado" loading="lazy" /></button>
+        <button class="g reveal" data-src="assets/img/latte.jpg"><img src="assets/img/latte.jpg" alt="Latte topped with whipped cream and cinnamon" loading="lazy" /></button>
+        <button class="g reveal" data-src="assets/img/quesadilla.jpg"><img src="assets/img/quesadilla.jpg" alt="Quesadilla with guacamole and pico de gallo" loading="lazy" /></button>
+        <button class="g reveal" data-src="assets/img/avocado-benedict.jpg"><img src="assets/img/avocado-benedict.jpg" alt="Avocado benedict with home-style potatoes" loading="lazy" /></button>
+        <button class="g reveal" data-src="assets/img/chorizo-omelette.jpg"><img src="assets/img/chorizo-omelette.jpg" alt="Chorizo omelette with beans and guacamole" loading="lazy" /></button>
+        <button class="g reveal" data-src="assets/img/steak-eggs-2.jpg"><img src="assets/img/steak-eggs-2.jpg" alt="Steak and scrambled eggs with hash browns" loading="lazy" /></button>
+        <button class="g reveal" data-src="assets/img/veggie-quesadilla.jpg"><img src="assets/img/veggie-quesadilla.jpg" alt="Quesadilla topped with crema and pico" loading="lazy" /></button>
+        <button class="g reveal" data-src="assets/img/steak-eggs.jpg"><img src="assets/img/steak-eggs.jpg" alt="Steak and eggs with home fries" loading="lazy" /></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="section reviews" id="reviews">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">What Reno Says</p>
+        <h2>Loved by locals</h2>
+      </div>
+      <div class="rating-grid">
+        <a class="rating reveal" href="https://www.google.com/search?q=Gloria%27s+Cafe+2365+Dickerson+Rd+Reno" target="_blank" rel="noopener">
+          <span class="big">4.5</span><span class="star-row">★★★★★</span><span>460+ Google reviews</span><span class="go">Read on Google →</span>
+        </a>
+        <a class="rating reveal" href="https://www.facebook.com/gloriascafe.nv/reviews" target="_blank" rel="noopener">
+          <span class="big">94%</span><span class="star-row">★★★★★</span><span>recommend us on Facebook (35 reviews)</span><span class="go">Read on Facebook →</span>
+        </a>
+        <a class="rating reveal" href="https://www.yelp.com/biz/gloria-s-cafe-reno-2" target="_blank" rel="noopener">
+          <span class="big">Yelp</span><span>See what diners are saying</span><span class="go">Read on Yelp →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visit -->
+  <section class="section visit" id="visit">
+    <div class="wrap visit-grid">
+      <div class="visit-info reveal">
+        <p class="eyebrow dark">Visit Us</p>
+        <h2>Pull up a chair</h2>
+        <div class="info-block">
+          <h4>Address</h4>
+          <p>2365 Dickerson Rd<br />Reno, NV 89503</p>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=2365+Dickerson+Rd,+Reno,+NV+89503" target="_blank" rel="noopener" class="link">Get directions →</a>
+        </div>
+        <div class="info-block">
+          <h4>Contact</h4>
+          <p><a href="tel:+17754093277">(775) 409-3277</a><br /><a href="mailto:Gloriascafe.nv@gmail.com">Gloriascafe.nv@gmail.com</a></p>
+        </div>
+        <div class="info-block">
+          <h4>Hours</h4>
+          <table class="hours" id="hours">
+            <tr data-day="1"><td>Monday</td><td>8:00 AM – 1:00 PM</td></tr>
+            <tr data-day="2"><td>Tuesday</td><td>Closed</td></tr>
+            <tr data-day="3"><td>Wednesday</td><td>8:00 AM – 1:00 PM</td></tr>
+            <tr data-day="4"><td>Thursday</td><td>8:00 AM – 1:00 PM</td></tr>
+            <tr data-day="5"><td>Friday</td><td>8:00 AM – 1:00 PM</td></tr>
+            <tr data-day="6"><td>Saturday</td><td>8:00 AM – 2:00 PM</td></tr>
+            <tr data-day="0"><td>Sunday</td><td>8:00 AM – 2:00 PM</td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="map reveal">
+        <iframe title="Map to Gloria's Cafe" src="https://www.google.com/maps?q=2365+Dickerson+Rd,+Reno,+NV+89503&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <img src="assets/img/logo.png" alt="Gloria's Cafe" class="footer-logo" />
+      <p class="tagline">All American Breakfast · Feel at home.</p>
+      <div class="footer-links">
+        <a href="https://www.instagram.com/gloriascafe.nv/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/gloriascafe.nv/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.yelp.com/biz/gloria-s-cafe-reno-2" target="_blank" rel="noopener">Yelp</a>
+        <a href="tel:+17754093277">(775) 409-3277</a>
+      </div>
+      <p class="fine">© <span id="year"></span> Gloria's Cafe · 2365 Dickerson Rd, Reno, NV 89503</p>
+      <p class="fine">Website by <a href="https://www.nexoradigital.live" target="_blank" rel="noopener">Nexora Digital</a></p>
+    </div>
+  </footer>
+
+  <!-- Mobile action bar -->
+  <div class="mobile-bar">
+    <a href="tel:+17754093277">📞 Call</a>
+    <a href="#menu">🍳 Menu</a>
+    <a href="https://www.google.com/maps/dir/?api=1&destination=2365+Dickerson+Rd,+Reno,+NV+89503" target="_blank" rel="noopener">📍 Directions</a>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-x" aria-label="Close">×</button>
+    <img alt="" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
